@@ -62,7 +62,7 @@ class snow extends human{
     }
 }
 
-public class A1113329_0331_1 {
+public class A1113329_0331 {
     public static void main(String[] argv){
         animal.showinfo();
         animal []animals = {new animal("雪寶",1.1,52,100),
@@ -94,9 +94,9 @@ public class A1113329_0331_1 {
             System.out.println("請輸入"+a.name+"的加速度(y)。若無請輸入0");
             double y = sc.nextDouble();
             if (y==0)
-                dist = a.distance(x,y);
-            else
                 dist = a.distance(x);
+            else
+                dist = a.distance(x,y);
             System.out.println(a.name+"的奔跑距離為"+dist+"\n");
         }   
 
@@ -107,9 +107,9 @@ public class A1113329_0331_1 {
             double y = sc.nextDouble();
             
             if (y==0)
-                dist = h.distance(x,y);
-            else
                 dist = h.distance(x);
+            else
+                dist = h.distance(x,y);
             System.out.println(h.name+"的奔跑距離為"+dist+"\n");
         }
 
@@ -119,9 +119,9 @@ public class A1113329_0331_1 {
         double y = sc.nextDouble();
         
         if (y==0)
-            dist = queen.distance(x,y);
-        else
             dist = queen.distance(x);
+        else
+            dist = queen.distance(x,y);
         System.out.println(queen.name+"的奔跑距離為"+dist+"\n");
     }
 }
